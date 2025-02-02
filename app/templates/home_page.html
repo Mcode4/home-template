@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="../styles/nav.css">
+<header id="nav-links">
+    {% block nav_links %}
+    <div id="home" onclick='window.location.href="/"'>Home Link</div>
+    <div id="other">
+        <div onclick='{{url_for("content.main_page")}}'>Content</div>
+        <div onclick='{{url_for("about_us.main_page")}}'>About Us</div>
+        <div onclick='{{url_for("contact.main_page")}}'>Contact</div>
+    </div>
+    {% endblock %}
+    <div>
+        Content of the Home Page
+    </div>
+</header>
